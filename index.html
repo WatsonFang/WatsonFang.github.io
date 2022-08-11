@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/11/el-tree-transfer%E7%A9%BF%E6%A2%AD%E6%A1%86%E8%B8%A9%E4%BA%86%E7%9A%84%E5%9D%91/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/10/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -179,19 +179,42 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/08/11/el-tree-transfer%E7%A9%BF%E6%A2%AD%E6%A1%86%E8%B8%A9%E4%BA%86%E7%9A%84%E5%9D%91/" class="post-title-link" itemprop="url">el-tree-transfer穿梭框踩了的坑</a>
+            <a href="/2022/08/10/hello-world/" class="post-title-link" itemprop="url">欢迎来到我的个人博客!</a>
         </h2>
 
         <div class="post-meta">
+          
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-08-11 16:42:45 / 修改时间：16:53:55" itemprop="dateCreated datePublished" datetime="2022-08-11T16:42:45+08:00">2022-08-11</time>
+              <time title="创建时间：2022-08-10 16:26:29" itemprop="dateCreated datePublished" datetime="2022-08-10T16:26:29+08:00">2022-08-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-08-11 17:20:02" itemprop="dateModified" datetime="2022-08-11T17:20:02+08:00">2022-08-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%B0%E5%BD%95%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">记录生活</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%B0%E5%BD%95%E7%94%9F%E6%B4%BB/%E5%AF%BC%E8%A8%80/" itemprop="url" rel="index"><span itemprop="name">导言</span></a>
+                </span>
             </span>
 
           <br>
@@ -200,14 +223,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.9k</span>
+              <span>0</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -221,23 +244,6 @@
       
           <span id="more"></span>
 
-<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a><strong>下载</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install el-tree-transfer --save</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="多个根节点案例（一个根节点就是官方案例，其实是一样的）"><a href="#多个根节点案例（一个根节点就是官方案例，其实是一样的）" class="headerlink" title="多个根节点案例（一个根节点就是官方案例，其实是一样的）"></a><strong>多个根节点案例（一个根节点就是官方案例，其实是一样的）</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> &lt;tree-transfer</span><br><span class="line">     :from_data=<span class="string">&quot;fromData&quot;</span></span><br><span class="line">     :to_data=<span class="string">&quot;toData&quot;</span></span><br><span class="line">     :defaultProps=<span class="string">&quot;&#123; label: &#x27;label&#x27; &#125;&quot;</span></span><br><span class="line">     @add-btn=<span class="string">&quot;add&quot;</span></span><br><span class="line">     @remove-btn=<span class="string">&quot;remove&quot;</span></span><br><span class="line">     :mode=<span class="string">&quot;mode&quot;</span></span><br><span class="line">     height=<span class="string">&quot;540px&quot;</span></span><br><span class="line">     filter</span><br><span class="line">     openAll</span><br><span class="line">     &gt;</span><br><span class="line">&lt;/tree-transfer&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> treeTransfer from <span class="string">&quot;el-tree-transfer&quot;</span>; <span class="comment">// 引入</span></span><br><span class="line">export <span class="keyword">default</span> &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      mode: <span class="string">&quot;transfer&quot;</span>, <span class="comment">// transfer addressList</span></span><br><span class="line">      fromData: [</span><br><span class="line">        &#123;</span><br><span class="line">          id: <span class="string">&quot;1&quot;</span>,</span><br><span class="line">          pid: <span class="number">0</span>,</span><br><span class="line">          label: <span class="string">&quot;一级 1&quot;</span>,</span><br><span class="line">          children: [</span><br><span class="line">            &#123;</span><br><span class="line">              id: <span class="string">&quot;1-1&quot;</span>,</span><br><span class="line">              pid: <span class="string">&quot;1&quot;</span>,</span><br><span class="line">              label: <span class="string">&quot;二级 1-1&quot;</span>,</span><br><span class="line">              children: [],</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">              id: <span class="string">&quot;1-2&quot;</span>,</span><br><span class="line">              pid: <span class="string">&quot;1&quot;</span>,</span><br><span class="line">              label: <span class="string">&quot;二级 1-2&quot;</span>,</span><br><span class="line">              children: [</span><br><span class="line">                &#123;</span><br><span class="line">                  id: <span class="string">&quot;1-2-2&quot;</span>,</span><br><span class="line">                  pid: <span class="string">&quot;1-2&quot;</span>,</span><br><span class="line">                  children: [],</span><br><span class="line">                  label: <span class="string">&quot;二级 1-2-2&quot;</span>,</span><br><span class="line">                &#125;,</span><br><span class="line">              ],</span><br><span class="line">            &#125;,</span><br><span class="line">          ],</span><br><span class="line">        &#125;,</span><br><span class="line">      ],</span><br><span class="line">      toData: [</span><br><span class="line">        &#123;</span><br><span class="line">          id: <span class="string">&quot;1&quot;</span>,</span><br><span class="line">          pid: <span class="number">0</span>,</span><br><span class="line">          label: <span class="string">&quot;一级 1&quot;</span>,</span><br><span class="line">          children: [</span><br><span class="line">            &#123;</span><br><span class="line">              id: <span class="string">&quot;1-1&quot;</span>,</span><br><span class="line">              pid: <span class="string">&quot;1&quot;</span>,</span><br><span class="line">              label: <span class="string">&quot;二级 1-1&quot;</span>,</span><br><span class="line">              children: [],</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">              id: <span class="string">&quot;1-2&quot;</span>,</span><br><span class="line">              pid: <span class="string">&quot;1&quot;</span>,</span><br><span class="line">              label: <span class="string">&quot;二级 1-2&quot;</span>,</span><br><span class="line">              children: [</span><br><span class="line">                &#123;</span><br><span class="line">                  id: <span class="string">&quot;1-2-1&quot;</span>,</span><br><span class="line">                  pid: <span class="string">&quot;1-2&quot;</span>,</span><br><span class="line">                  children: [],</span><br><span class="line">                  label: <span class="string">&quot;二级 1-2-1&quot;</span>,</span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                  id: <span class="string">&quot;1-2-2&quot;</span>,</span><br><span class="line">                  pid: <span class="string">&quot;1-2&quot;</span>,</span><br><span class="line">                  children: [],</span><br><span class="line">                  label: <span class="string">&quot;二级 1-2-2&quot;</span>,</span><br><span class="line">                &#125;,</span><br><span class="line">              ],</span><br><span class="line">            &#125;,</span><br><span class="line">          ],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          id: <span class="string">&quot;2&quot;</span>,</span><br><span class="line">          pid: <span class="number">0</span>,</span><br><span class="line">          label: <span class="string">&quot;一级 2&quot;</span>,</span><br><span class="line">          children: [</span><br><span class="line">            &#123;</span><br><span class="line">              id: <span class="string">&quot;2-1&quot;</span>,</span><br><span class="line">              pid: <span class="string">&quot;2&quot;</span>,</span><br><span class="line">              label: <span class="string">&quot;二级 2-1&quot;</span>,</span><br><span class="line">              children: [],</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">              id: <span class="string">&quot;2-2&quot;</span>,</span><br><span class="line">              pid: <span class="string">&quot;2&quot;</span>,</span><br><span class="line">              label: <span class="string">&quot;二级 2-2&quot;</span>,</span><br><span class="line">              children: [</span><br><span class="line">                &#123;</span><br><span class="line">                  id: <span class="string">&quot;2-2-1&quot;</span>,</span><br><span class="line">                  pid: <span class="string">&quot;2-2&quot;</span>,</span><br><span class="line">                  children: [],</span><br><span class="line">                  label: <span class="string">&quot;二级 2-2-1&quot;</span>,</span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                  id: <span class="string">&quot;2-2-2&quot;</span>,</span><br><span class="line">                  pid: <span class="string">&quot;2-2&quot;</span>,</span><br><span class="line">                  children: [],</span><br><span class="line">                  label: <span class="string">&quot;二级 2-2-2&quot;</span>,</span><br><span class="line">                &#125;,</span><br><span class="line">              ],</span><br><span class="line">            &#125;,</span><br><span class="line">          ],</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          id: <span class="string">&quot;3&quot;</span>,</span><br><span class="line">          pid: <span class="number">0</span>,</span><br><span class="line">          label: <span class="string">&quot;一级 3&quot;</span>,</span><br><span class="line">          children: [</span><br><span class="line">            &#123;</span><br><span class="line">              id: <span class="string">&quot;3-1&quot;</span>,</span><br><span class="line">              pid: <span class="string">&quot;3&quot;</span>,</span><br><span class="line">              label: <span class="string">&quot;二级 3-1&quot;</span>,</span><br><span class="line">              children: [],</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">              id: <span class="string">&quot;3-2&quot;</span>,</span><br><span class="line">              pid: <span class="string">&quot;3&quot;</span>,</span><br><span class="line">              label: <span class="string">&quot;二级 3-2&quot;</span>,</span><br><span class="line">              children: [</span><br><span class="line">                &#123;</span><br><span class="line">                  id: <span class="string">&quot;3-2-1&quot;</span>,</span><br><span class="line">                  pid: <span class="string">&quot;3-2&quot;</span>,</span><br><span class="line">                  children: [],</span><br><span class="line">                  label: <span class="string">&quot;二级 3-2-1&quot;</span>,</span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                  id: <span class="string">&quot;3-2-2&quot;</span>,</span><br><span class="line">                  pid: <span class="string">&quot;3-2&quot;</span>,</span><br><span class="line">                  children: [],</span><br><span class="line">                  label: <span class="string">&quot;二级 3-2-2&quot;</span>,</span><br><span class="line">                &#125;,</span><br><span class="line">              ],</span><br><span class="line">            &#125;,</span><br><span class="line">          ],</span><br><span class="line">        &#125;,</span><br><span class="line">      ],</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">methods</span>: &#123;</span><br><span class="line">   <span class="comment">// 切换模式 现有树形穿梭框模式transfer 和通讯录模式addressList</span></span><br><span class="line">   <span class="title function_">changeMode</span>(<span class="params"></span>) &#123;</span><br><span class="line">     <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">mode</span> == <span class="string">&quot;transfer&quot;</span>) &#123;</span><br><span class="line">       <span class="variable language_">this</span>.<span class="property">mode</span> = <span class="string">&quot;addressList&quot;</span>;</span><br><span class="line">     &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       <span class="variable language_">this</span>.<span class="property">mode</span> = <span class="string">&quot;transfer&quot;</span>;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">   <span class="comment">// 监听穿梭框组件添加</span></span><br><span class="line">   <span class="title function_">add</span>(<span class="params">fromData, toData, obj</span>) &#123;</span><br><span class="line">     <span class="comment">// 树形穿梭框模式transfer时，返回参数为左侧树移动后数据、右侧树移动后数据、移动的                </span></span><br><span class="line">     &#123;keys,nodes,halfKeys,halfNodes&#125;对象</span><br><span class="line">     <span class="comment">// 通讯录模式addressList时，返回参数为右侧收件人列表、右侧抄送人列表、右侧密送人列表</span></span><br><span class="line">     <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;fromData:&quot;</span>, fromData);</span><br><span class="line">     <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;toData:&quot;</span>, toData);</span><br><span class="line">     <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;obj:&quot;</span>, obj);</span><br><span class="line">   &#125;,</span><br><span class="line">   <span class="comment">// 监听穿梭框组件移除</span></span><br><span class="line">   <span class="title function_">remove</span>(<span class="params">fromData, toData, obj</span>) &#123;</span><br><span class="line">     <span class="comment">// 树形穿梭框模式transfer时，返回参数为左侧树移动后数据、右侧树移动后数据、移动的 </span></span><br><span class="line">     &#123;keys,nodes,halfKeys,halfNodes&#125;对象</span><br><span class="line">     <span class="comment">// 通讯录模式addressList时，返回参数为右侧收件人列表、右侧抄送人列表、右侧密送人列表</span></span><br><span class="line">     <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;fromData:&quot;</span>, fromData);</span><br><span class="line">     <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;toData:&quot;</span>, toData);</span><br><span class="line">     <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;obj:&quot;</span>, obj);</span><br><span class="line">   &#125;,</span><br><span class="line">    <span class="title function_">getAddress</span>(<span class="params"></span>) &#123;</span><br><span class="line">     <span class="variable language_">this</span>.<span class="property">fromData</span>.<span class="title function_">forEach</span>(<span class="function">(<span class="params">item</span>) =&gt;</span> &#123;</span><br><span class="line">       <span class="comment">//el-tree-transfer组件的第一个pid必须为0</span></span><br><span class="line">       item.<span class="property">pid</span> = <span class="number">0</span>;</span><br><span class="line">     &#125;);</span><br><span class="line">     <span class="variable language_">this</span>.<span class="property">toData</span>.<span class="title function_">forEach</span>(<span class="function">(<span class="params">item</span>) =&gt;</span> &#123;</span><br><span class="line">       item.<span class="property">pid</span> = <span class="number">0</span>;</span><br><span class="line">     &#125;);</span><br></pre></td></tr></table></figure>
-
-
-
-<p>​		<strong>在参考了其他人的文档以后，我知道了根节点的<span style="color:red">pid</span>必须是为<span style="color:red">0</span>开头，但是他们没有说，<span style="color:red">这个必须是数字类型！</span>后面的子节点的pid同父级的id。如果不是数据类型，就会出现大问题！在右侧数据并到左边的时候，会出现数据丢失等情况。所以就会有代码的后面一个<span style="color:red">getAddress()</span>方法，来调整所有根节点的pid都设置为0，如果是死数据，可以把方法放在create进行调用，如果是通过接口获取数据，可以把方法放在获取到数据后进行调用。我因为一开始 ，没和后端同事协调好，他给的pid的字符串类型，结果出现了数据的移动丢失或多次渲染的情况。。</strong> </p>
-<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://img-blog.csdnimg.cn/e718d92f99d7449f875c604f3df10bbd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCP5pa55Zyo5a2m5YmN56uvaW5nfg==,size_14,color_FFFFFF,t_70,g_se,x_16" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></h3><h3 id="数据发生了丢失！"><a href="#数据发生了丢失！" class="headerlink" title="数据发生了丢失！"></a><strong><span style="color:red">数据发生了丢失！</span></strong></h3><h5 id="正是因为会出现如上问题，最好把id和pid的类型设为一致。如果id和pid的类型不一致，还会出现重复渲染并报如下错误"><a href="#正是因为会出现如上问题，最好把id和pid的类型设为一致。如果id和pid的类型不一致，还会出现重复渲染并报如下错误" class="headerlink" title="正是因为会出现如上问题，最好把id和pid的类型设为一致。如果id和pid的类型不一致，还会出现重复渲染并报如下错误"></a><img src="https://img-blog.csdnimg.cn/d2183c4d9d9b421f8e26ff943f99c9ee.gif" alt="img"><strong>正是因为会出现如上问题，最好把id和pid的类型设为一致。如果id和pid的类型不一致，还会出现重复渲染并报如下错误</strong></h5><p><strong><span style="background-color:#fbd4d0"> Duplicate keys detected: ‘XXX’. This may cause an update error.</span></strong> </p>
-<p><strong>所以<del>一定要和 后端同事进行协调，给的数据一定要是同一类型</del>找了半天bug不知道原因呜呜呜</strong></p>
 
       
     </div>
@@ -257,7 +263,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/10/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/11/%E5%85%B3%E4%BA%8EVue3%E5%B5%8C%E5%A5%97%E6%8B%96%E6%8B%BD%EF%BC%88%E6%8B%96%E5%8A%A8%EF%BC%89%E4%BA%8B%E4%BB%B6%20%E9%80%9A%E8%BF%87vue3-smooth-dnd%E8%A7%A3%E5%86%B3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -271,7 +277,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/08/10/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2022/08/11/%E5%85%B3%E4%BA%8EVue3%E5%B5%8C%E5%A5%97%E6%8B%96%E6%8B%BD%EF%BC%88%E6%8B%96%E5%8A%A8%EF%BC%89%E4%BA%8B%E4%BB%B6%20%E9%80%9A%E8%BF%87vue3-smooth-dnd%E8%A7%A3%E5%86%B3/" class="post-title-link" itemprop="url">关于Vue3嵌套拖拽（拖动）事件 通过vue3-smooth-dnd解决</a>
         </h2>
 
         <div class="post-meta">
@@ -281,16 +287,104 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-08-10 16:26:29" itemprop="dateCreated datePublished" datetime="2022-08-10T16:26:29+08:00">2022-08-10</time>
+              <time title="创建时间：2022-08-11 17:20:44 / 修改时间：17:27:34" itemprop="dateCreated datePublished" datetime="2022-08-11T17:20:44+08:00">2022-08-11</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-08-11 15:36:11" itemprop="dateModified" datetime="2022-08-11T15:36:11+08:00">2022-08-11</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/vue3/" itemprop="url" rel="index"><span itemprop="name">vue3</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>前言： 一开始用的是vuedraggable去实现拖拽<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%B5%8C%E5%A5%97&spm=1001.2101.3001.7020">嵌套</a>，但是vue3里的vuedraggable组件需要template模板 去实现，在第二层的时候我死活拿不到值报错，不知道你们有没有出现这个问题（或者如何解决了这个问题，如果解决了可以告诉我下~感谢）</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/08/11/%E5%85%B3%E4%BA%8EVue3%E5%B5%8C%E5%A5%97%E6%8B%96%E6%8B%BD%EF%BC%88%E6%8B%96%E5%8A%A8%EF%BC%89%E4%BA%8B%E4%BB%B6%20%E9%80%9A%E8%BF%87vue3-smooth-dnd%E8%A7%A3%E5%86%B3/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/11/%E6%AC%A2%E8%BF%8E%E9%A1%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Watson">
+      <meta itemprop="description" content="达则兼济天下，穷则独善其身">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小方的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/11/%E6%AC%A2%E8%BF%8E%E9%A1%B5/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-08-11 16:58:51 / 修改时间：17:00:20" itemprop="dateCreated datePublished" datetime="2022-08-11T16:58:51+08:00">2022-08-11</time>
+            </span>
 
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -320,7 +414,109 @@
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022/08/10/hello-world/#more" rel="contents">
+              <a class="btn" href="/2022/08/11/%E6%AC%A2%E8%BF%8E%E9%A1%B5/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/11/el-tree-transfer%E7%A9%BF%E6%A2%AD%E6%A1%86%E8%B8%A9%E4%BA%86%E7%9A%84%E5%9D%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Watson">
+      <meta itemprop="description" content="达则兼济天下，穷则独善其身">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小方的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/11/el-tree-transfer%E7%A9%BF%E6%A2%AD%E6%A1%86%E8%B8%A9%E4%BA%86%E7%9A%84%E5%9D%91/" class="post-title-link" itemprop="url">el-tree-transfer穿梭框踩了的坑</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-08-11 16:42:45 / 修改时间：17:27:30" itemprop="dateCreated datePublished" datetime="2022-08-11T16:42:45+08:00">2022-08-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/javascript/" itemprop="url" rel="index"><span itemprop="name">javascript</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/elemenetui/" itemprop="url" rel="index"><span itemprop="name">elemenetui</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.9k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a><strong>下载</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install el-tree-transfer --save</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="多个根节点案例（一个根节点就是官方案例，其实是一样的）"><a href="#多个根节点案例（一个根节点就是官方案例，其实是一样的）" class="headerlink" title="多个根节点案例（一个根节点就是官方案例，其实是一样的）"></a><strong>多个根节点案例（一个根节点就是官方案例，其实是一样的）</strong></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> &lt;tree-transfer</span><br><span class="line">     :from_data=<span class="string">&quot;fromData&quot;</span></span><br><span class="line">     :to_data=<span class="string">&quot;toData&quot;</span></span><br><span class="line">     :defaultProps=<span class="string">&quot;&#123; label: &#x27;label&#x27; &#125;&quot;</span></span><br><span class="line">     @add-btn=<span class="string">&quot;add&quot;</span></span><br><span class="line">     @remove-btn=<span class="string">&quot;remove&quot;</span></span><br><span class="line">     :mode=<span class="string">&quot;mode&quot;</span></span><br><span class="line">     height=<span class="string">&quot;540px&quot;</span></span><br><span class="line">     filter</span><br><span class="line">     openAll</span><br><span class="line">     &gt;</span><br><span class="line">&lt;/tree-transfer&gt;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/08/11/el-tree-transfer%E7%A9%BF%E6%A2%AD%E6%A1%86%E8%B8%A9%E4%BA%86%E7%9A%84%E5%9D%91/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -408,9 +604,21 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -424,6 +632,25 @@
   </div>
 
 
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      一些链接(啥都有~)
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.csdn.net/" title="https:&#x2F;&#x2F;www.csdn.net&#x2F;" rel="noopener" target="_blank">CSDN</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://home.softeem.xin:9090/html_project/h2103/game/fhs_plane/" title="http:&#x2F;&#x2F;home.softeem.xin:9090&#x2F;html_project&#x2F;h2103&#x2F;game&#x2F;fhs_plane&#x2F;" rel="noopener" target="_blank">飞机大战</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://www.bilibili.com/" title="https:&#x2F;&#x2F;www.bilibili.com" rel="noopener" target="_blank">BilBil</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://bz.zzzmh.cn/index" title="https:&#x2F;&#x2F;bz.zzzmh.cn&#x2F;index" rel="noopener" target="_blank">极简壁纸(好看的壁纸)</a>
+        </li>
+    </ul>
+  </div>
 
       </div>
 
@@ -453,16 +680,16 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">4k</span>
+    <span title="站点总字数">11k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">4 分钟</span>
+    <span title="站点阅读时长">10 分钟</span>
 </div>
   <div class="powered-by">
   </div>
-  <span class="post-count">博客全站共1.2k字</span>
+  <span class="post-count">博客全站共2.4k字</span>
 
 
     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
