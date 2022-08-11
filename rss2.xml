@@ -32,9 +32,9 @@
       
       <category domain="http://example.com/tags/%E5%8E%9F%E5%88%9B/">原创</category>
       
-      <category domain="http://example.com/tags/vue/">vue</category>
-      
       <category domain="http://example.com/tags/%E5%89%8D%E7%AB%AF/">前端</category>
+      
+      <category domain="http://example.com/tags/vue/">vue</category>
       
       <category domain="http://example.com/tags/vue3-smooh-dnd/">vue3-smooh-dnd</category>
       
@@ -88,9 +88,9 @@
       
       <category domain="http://example.com/tags/%E5%8E%9F%E5%88%9B/">原创</category>
       
-      <category domain="http://example.com/tags/javascript/">javascript</category>
-      
       <category domain="http://example.com/tags/vue/">vue</category>
+      
+      <category domain="http://example.com/tags/javascript/">javascript</category>
       
       <category domain="http://example.com/tags/elementui%E7%BB%84%E4%BB%B6/">elementui组件</category>
       
